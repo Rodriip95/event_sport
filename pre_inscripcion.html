@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PreInscripcion</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<!-- LOGO !-->
+	<div class="home">
+		<a href="index.html" style="text-decoration: none; color: #000000;">
+			EVENT<br><span style="color:  #ff8226;">SPORT</span></a>
+	</div>
+	<nav class="nav_torneo">
+		<p>PRE-INSCRIPCION</p>
+	</nav>
+	<br>
+	<form id="formulario">
+		<fieldset class="info_pre">
+			<legend style="font-family: 'Impact', sans-serif; color:  #000000 ; font-size: 26px;">Pre Inscripcion!</legend>
+			<br>
+			<div>Completa el formulario y evaluaremos la peticion para inscrivir tu equipo para el proximo torneo</div>
+			<br>
+			<div class="tamano_text_tabla">Nombre del Equipo:
+				<br>
+				<br>
+				<input type="text" name="nombre">
+			</div>
+			<br>
+			<div class="tamano_text_tabla">Mail:
+				<br>
+				<br>
+				<input type="email" name="ej_mail" placeholder="nombre@ejemplo.com">
+			</div>
+			
+			<br>
+			<div class="tamano_text_tabla">Categoria:
+			<select name="categorias">
+			    <option value="bch">Libres</option>
+			    <option value="bcr">Seniors</option>
+			    <option value="bpy">Master</option>
+			</select>
+			</div>
+			<br>
+			<br>
+			<div class="tamano_text_tabla">Tildar las opciones que dispongan:</div>
+			<br>
+			<div>
+				Camisetas y Shorts
+				<input type="checkbox" name="opciones1" value="1" />
+				Disponibilidad los fines de semana
+				<input type="checkbox" name="opciones2" value="1" /><br>
+				Disponibilidad para pagar inscripcion/partidos
+				<input type="checkbox" name="opciones3" value="1" />
+			</div>
+			<br>
+			<div class="tamano_text_tabla">Porque deberiamos seleccionar a tu equipo:
+				<br>
+				<br>
+				<textarea rows="5" cols="15"></textarea>
+			</div>
+			<br>
+			<br>
+			<div class="tamano_text_tabla">Aceptas el reglamento detallado en el INICIO</div>
+			<div>SI	
+				<input type="radio" name="si" value="si">
+				NO	
+				<input type="radio" name="no" value="no">
+			</div>
+			<div>Nos comunicaremos via mail con los resultados de la pre-incripcion</div>
+    		<br>
+			<input type="submit" name="envia_datos" value="Enviar encuesta">	
+			<input type="reset" name="reset_datos" value="Borrar">
+			<br>
+		</fieldset>
+	</form>
+	<br>
+	<footer class="pie">
+		<p style="text-decoration: none; color: #ffffff;">
+			EVENT<br><span style="color:  #ff8226;">SPORT</span></p>
+	</footer>
+</body>
+</html>

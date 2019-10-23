@@ -1,0 +1,162 @@
+.home{
+	font-family: 'Impact', sans-serif;
+	color: #000000;
+	font-size: 45px; 
+	padding-left: 50px;
+}
+
+.barra_nav{
+	background-color: #000000;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 200px 0px 200px;
+}
+.nav_torneo {
+	background-color: #000000;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 40px;
+}
+.nav_contacto {
+	background-color: #000000;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 40px;
+}
+.nav_contacto a{
+	font-family: 'Impact', sans-serif;
+	color:  #ffffff ;
+	font-size: 35px;
+	text-decoration: none;
+}
+.barra_nav a{
+	font-family: 'Impact', sans-serif;
+	color:  #ffffff ;
+	font-size: 35px;
+	text-decoration: none;
+}
+.nav_torneo p{
+	font-family: 'Impact', sans-serif;
+	color:  #ffffff ;
+	font-size: 35px;
+}
+
+.info{
+	font-family: 'Calibri', sans-serif;
+	margin: 50px 100px;
+}
+
+.info_pre{
+	font-family: 'Calibri', sans-serif;
+	margin: 50px 300px;
+	background-image: url(fondopre.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: contain;
+}
+.tablatorneo {
+	background-image: url(fondotabla.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: contain;
+}
+
+.pie{
+	background-color: #000000;
+	font-family: 'Impact', sans-serif;
+	font-size: 38px;
+	padding: 25px 0px 25px 50px;
+}
+.encabezados{
+	font-family: 'Impact', sans-serif;
+	color: #000000;
+	font-size: 28px;
+}
+.titulos_tablas{
+	font-family: 'Impact', sans-serif;
+	color: #ff8226;
+	font-size: 28px;
+}
+
+.imagensedes1 {
+	background-image: url("pilarsede.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 300px;
+	width: 800px;
+	border: 3px solid grey;
+	margin: auto;
+}
+
+.imagensedes2 {
+	background-image: url("sedesport.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 300px;
+	width: 800px;
+	border: 3px solid grey;
+	margin: auto;
+}
+
+.imagensedes3 {
+	background-image: url("sedesm.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 300px;
+	width: 800px;
+	border: 3px solid grey;
+	margin: auto;
+}
+
+.imagensedes1 p {
+	text-align: right;
+	font-family: 'Impact', sans-serif;
+	color: #ff8226;
+	font-size: 16px;
+}
+
+.imagensedes1 p a {
+	text-align: right;
+	font-family: 'Impact', sans-serif;
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.imagensedes2 p {
+	text-align: right;
+	font-family: 'Impact', sans-serif;
+	color: #ff8226;
+	font-size: 16px;
+}
+
+.imagensedes2 p a {
+	text-align: right;
+	font-family: 'Impact', sans-serif;
+	color: #ffffff;
+	font-size: 24px;
+}
+.imagensedes3 p a {
+	text-align: right;
+	font-family: 'Impact', sans-serif;
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.imagensedes3 p {
+	text-align: right;
+	font-family: 'Impact', sans-serif;
+	color: #ff8226;
+	font-size: 16px;
+}
+
+.galeria{
+	padding: 20px 200px;
+	display: flex;
+	flex-flow: wrap;
+}
