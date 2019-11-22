@@ -3,35 +3,92 @@
 <head>
 	<title>contactos</title>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
 </head>
 <body>
 	<!-- LOGO !-->
-	<div class="home">
-		<a href="index.html" style="text-decoration: none; color: #000000;">
-			EVENT<br><span style="color:  #ff8226;">SPORT</span></a>
+	<div class="header_rp">
+		<div class="header_home">
+			<a href="index.html" style="text-decoration: none; color: #000000;">
+				EVENT<br><span style="color:  #ff8226;">SPORT</span></a>
+		</div>
 	</div>
-	<nav class="barra_nav">
+	<!-- BARRA DE NAVEGACION PRINCIPAL !-->
+	<nav class="navbar_rp">
 		<a href="index.html">INICIO</a>
 		<a href="torneo1.html">TORNEO</a>
 		<a href="pre_inscripcion.html">PRE-INSCRIPCION</a>
 		<a href="sedes.html">SEDES</a>
 		<a href="contacto.html">CONTACTOS</a>
 	</nav>
+
+	<!--BARRA DE REDES-->
 	<div class="nav_contacto">
-		<a href="http://www.instagram.com/eventsportarg/" target="_blank"><img src="iconinsta.png" width="50px">  INSTAGRAM</a>
-		<a href="http://www.facebook.com/EventSport/?epa=SEARCH_BOX" target="_blank">FACEBOOK  <img src="iconfb.png" width="50px"></a>
+		<a href="http://www.instagram.com/eventsportarg/" target="_blank">
+			<img src="images/iconinsta.png" height="auto;" alt="icon instagram">  INSTAGRAM</a>
+		<a href="http://www.facebook.com/EventSport/?epa=SEARCH_BOX" target="_blank">
+			FACEBOOK  <img src="images/iconfb.png" height="auto;" alt="icon facebook"></a>
 	</div>
-	<br>
-	<div class="galeria">
-		<div><img src="equipo.jpg" width="520px"></div>
-		<div><img src="2.jpg" height="700px"></div>
-		<div><img src="3.jpg" height="600px"></div>
-		<div><img src="4.jpg" height="200px"></div>
+	
+	<!--GALERIA DE FOTOS-->
+	<div class="intro_gallery">
+		<p>Todas las fotos, videos y noticias del torneo las podes seguir desde nuestras cuentas oficiales.</p>
 	</div>
-	<br>
-	<footer class="pie">
-		<p style="text-decoration: none; color: #ffffff;">
-			EVENT<br><span style="color:  #ff8226;">SPORT</span></p>
+	<div class="main_content_grid">
+		<div class="main_content_gallery">
+			<img src="images/equipo.jpg" width="100%" alt="foto de basket" class="item-1">
+			<img src="images/2.jpg" width="100%" alt="foto de basket" class="item-2">
+			<img src="images/3.jpg" width="100%" alt="foto de basket" class="item-3">
+			<img src="images/4.jpg" width="100%" alt="foto de basket" class="item-4">
+		</div>	
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="pt-5 pb-4" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+					<p style="text-decoration: none; color: #ffffff;">EVENT<br><span style="color:  #ff8226;">SPORT</span></p>
+					<p class="mb-4">TORNEO AMATEUR DE BASKET</p>
+					<ul class="f-address">
+						<li>
+							<div class="row">
+								<div class="col-1"><i class="fas fa-map-marker"></i></div>
+								<div class="col-10">
+									<h6 class="font-weight-bold mb-0">Direccion:</h6>
+									<p>Pilar, Buenos Aires</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="col-1"><i class="far fa-envelope"></i></div>
+								<div class="col-10">
+									<h6 class="font-weight-bold mb-0">Consultas</h6>
+									<p><a href="#">eventsport@gmail.com</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="col-1"><i class="fas fa-phone-volume"></i></div>
+								<div class="col-10">
+									<h6 class="font-weight-bold mb-0">Telefono:</h6>
+									<p><a href="#">(011)46459803</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,162 +1,231 @@
-.home{
-	font-family: 'Impact', sans-serif;
-	color: #000000;
-	font-size: 45px; 
-	padding-left: 50px;
-}
+@keyframes animacion_menu {
+  0% {
+    transform: scale(1.1, 1.1); }
+  25% {
+    transform: scale(1.2, 1.2); }
+  50% {
+    transform: scale(1.3, 1.3); }
+  75% {
+    transform: scale(1.2, 1.2); }
+  100% {
+    transform: scale(1.1, 1.1); } }
 
-.barra_nav{
-	background-color: #000000;
-	height: 70px;
-	display: flex;
-	justify-content: space-around;
-	padding: 20px 200px 0px 200px;
-}
+@keyframes animacion_fotos {
+  from {
+    opacity: 0.9;
+    transform: scale(1.01, 1.01); }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05, 1.05); }
+  to {
+    opacity: 0.9;
+    transform: scale(1.01, 1.01); } }
+
+@keyframes animacion_banner {
+  0% {
+    height: 150px; }
+  100% {
+    height: 250px; } }
+
+/*HEADER*/
+.header_rp {
+  display: flex;
+  justify-content: right;
+  background-image: url(images/baner.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  animation-name: animacion_banner;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-duration: 1s; }
+  .header_rp .header_home {
+    width: 90%;
+    font-family: "Impact", sans-serif;
+    color: #000000;
+    font-size: 45px; }
+
+/*BARRA DE NAVEGACION*/
+.navbar_rp {
+  background-color: #000000;
+  display: flex;
+  justify-content: center; }
+  .navbar_rp a {
+    padding: 0px 20px;
+    font-family: "Impact", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none; }
+    .navbar_rp a:hover {
+      color: #ff8226;
+      animation-name: animacion_menu;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+      animation-delay: 0s; }
+
 .nav_torneo {
-	background-color: #000000;
-	height: 70px;
-	display: flex;
-	justify-content: space-around;
-	padding-bottom: 40px;
-}
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around; }
+  .nav_torneo p {
+    font-family: "Impact", sans-serif;
+    color: #ffffff;
+    font-size: 35px; }
+
 .nav_contacto {
-	background-color: #000000;
-	height: 70px;
-	display: flex;
-	justify-content: space-around;
-	padding-bottom: 40px;
-}
-.nav_contacto a{
-	font-family: 'Impact', sans-serif;
-	color:  #ffffff ;
-	font-size: 35px;
-	text-decoration: none;
-}
-.barra_nav a{
-	font-family: 'Impact', sans-serif;
-	color:  #ffffff ;
-	font-size: 35px;
-	text-decoration: none;
-}
-.nav_torneo p{
-	font-family: 'Impact', sans-serif;
-	color:  #ffffff ;
-	font-size: 35px;
-}
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around; }
+  .nav_contacto a {
+    font-family: "Impact", sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    text-decoration: none;
+    padding-top: 5px; }
+    .nav_contacto a:hover {
+      color: #ff8226; }
+    .nav_contacto a img {
+      width: 35px; }
 
-.info{
-	font-family: 'Calibri', sans-serif;
-	margin: 50px 100px;
-}
+.info {
+  font-family: 'Calibri', sans-serif;
+  margin: 50px 100px; }
 
-.info_pre{
-	font-family: 'Calibri', sans-serif;
-	margin: 50px 300px;
-	background-image: url(fondopre.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: contain;
-}
+.info_pre {
+  font-family: 'Calibri', sans-serif;
+  margin: 50px 300px;
+  background-image: url(images/fondopre.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain; }
+
 .tablatorneo {
-	background-image: url(fondotabla.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: contain;
-}
+  background-image: url(images/fondotabla.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain; }
 
-.pie{
-	background-color: #000000;
-	font-family: 'Impact', sans-serif;
-	font-size: 38px;
-	padding: 25px 0px 25px 50px;
-}
-.encabezados{
-	font-family: 'Impact', sans-serif;
-	color: #000000;
-	font-size: 28px;
-}
-.titulos_tablas{
-	font-family: 'Impact', sans-serif;
-	color: #ff8226;
-	font-size: 28px;
-}
+footer {
+  background-color: #000000;
+  font-family: "Impact", sans-serif;
+  color: #fff; }
+
+.boton {
+  font-family: "Impact", sans-serif;
+  margin: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff8226;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999; }
+  .boton:hover {
+    background-color: #ec6b0e; }
+  .boton:active {
+    background-color: #ec6b0e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); }
+
+.encabezados {
+  font-family: "Impact", sans-serif;
+  color: #000000;
+  font-size: 28px; }
+
+.titulos_tablas {
+  font-family: "Impact", sans-serif;
+  color: #ff8226;
+  font-size: 28px; }
 
 .imagensedes1 {
-	background-image: url("pilarsede.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: top;
-	height: 300px;
-	width: 800px;
-	border: 3px solid grey;
-	margin: auto;
-}
+  background-image: url("images/pilarsede.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 300px;
+  width: 800px;
+  margin: auto;
+  padding: 20px 0px; }
+  .imagensedes1 p {
+    text-align: right;
+    font-family: "Impact", sans-serif;
+    color: #ff8226;
+    font-size: 16px; }
+    .imagensedes1 p a {
+      text-align: right;
+      font-family: "Impact", sans-serif;
+      color: #ffffff;
+      font-size: 24px; }
 
 .imagensedes2 {
-	background-image: url("sedesport.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: top;
-	height: 300px;
-	width: 800px;
-	border: 3px solid grey;
-	margin: auto;
-}
+  background-image: url("images/sedesport.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 300px;
+  width: 800px;
+  margin: auto;
+  padding: 20px 0px; }
+  .imagensedes2 p {
+    text-align: right;
+    font-family: "Impact", sans-serif;
+    color: #ff8226;
+    font-size: 16px; }
+    .imagensedes2 p a {
+      text-align: right;
+      font-family: "Impact", sans-serif;
+      color: #ffffff;
+      font-size: 24px; }
 
 .imagensedes3 {
-	background-image: url("sedesm.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: top;
-	height: 300px;
-	width: 800px;
-	border: 3px solid grey;
-	margin: auto;
-}
+  background-image: url("images/sedesm.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 300px;
+  width: 800px;
+  margin: auto;
+  padding: 20px 0px; }
+  .imagensedes3 p {
+    text-align: right;
+    font-family: "Impact", sans-serif;
+    color: #ff8226;
+    font-size: 16px; }
+    .imagensedes3 p a {
+      text-align: right;
+      font-family: "Impact", sans-serif;
+      color: #ffffff;
+      font-size: 24px; }
 
-.imagensedes1 p {
-	text-align: right;
-	font-family: 'Impact', sans-serif;
-	color: #ff8226;
-	font-size: 16px;
-}
+/*GALERIA DE IMAGENES DE CONTACTO*/
+.intro_gallery {
+  font-family: "Impact", sans-serif;
+  font-size: 24px;
+  text-align: center; }
 
-.imagensedes1 p a {
-	text-align: right;
-	font-family: 'Impact', sans-serif;
-	color: #ffffff;
-	font-size: 24px;
-}
-
-.imagensedes2 p {
-	text-align: right;
-	font-family: 'Impact', sans-serif;
-	color: #ff8226;
-	font-size: 16px;
-}
-
-.imagensedes2 p a {
-	text-align: right;
-	font-family: 'Impact', sans-serif;
-	color: #ffffff;
-	font-size: 24px;
-}
-.imagensedes3 p a {
-	text-align: right;
-	font-family: 'Impact', sans-serif;
-	color: #ffffff;
-	font-size: 24px;
-}
-
-.imagensedes3 p {
-	text-align: right;
-	font-family: 'Impact', sans-serif;
-	color: #ff8226;
-	font-size: 16px;
-}
-
-.galeria{
-	padding: 20px 200px;
-	display: flex;
-	flex-flow: wrap;
-}
+.main_content_grid {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto; }
+  .main_content_grid .main_content_gallery {
+    margin: 30px 0px 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px; }
+    .main_content_grid .main_content_gallery .item-4 {
+      grid-column: 1 / span 3;
+      grid-row: 2; }
+    .main_content_grid .main_content_gallery img {
+      background-attachment: fixed;
+      border-radius: 20px; }
+      .main_content_grid .main_content_gallery img:hover {
+        animation-name: animacion_fotos;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        animation-delay: 0s; }
